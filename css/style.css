@@ -1,0 +1,83 @@
+@import url(font-family: 'Nunito Sans', sans-serif;
+font-family: 'Outfit', sans-serif;
+font-family: 'Roboto', sans-serif;);
+
+/* || RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* || UTILITY RESET */
+.nowrap {
+    white-space: nowrap;
+}
+
+/* VARIABLES */
+:root{
+    /* ||COLORS */
+    --BGCOLOR: hsl(212, 45%, 89%);
+    --BODY_BGCOLOR: hsl(0, 0%, 100%);
+    --H1-FONTCOLOR: hsl(218, 44%, 22%);
+    --P-COLOR: hsl(220, 15%, 55%);
+}
+
+/* ||GENERAL STYLE */
+body {
+    font-family: "outfit", sans-serif;
+    background-color: var(--BGCOLOR);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 1px);
+
+}
+
+.container {
+    background-color: var(--BODY_BGCOLOR);
+    border: solid white;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 10px snow;
+    margin: 1rem;
+    box-sizing: content-box;
+    width: 300px;
+    height: 30%;
+}
+
+img {
+    padding: 0.5rem;
+    border-radius: 15px;
+    width: 300px;
+}
+
+h1 {
+    color: var(--H1-FONTCOLOR);
+    margin-bottom: 1rem;
+}
+
+p {
+    color: var(--P-COLOR);
+    font-size: 15px;
+    padding-bottom: 2rem;
+}
+
+.attribution  {
+    position: absolute;
+    bottom: 1rem;
+}
+
+.attribution a:any-link {
+    color: #333;
+}
+
+@media (max-width:576px) {
+    .container {
+        max-width: 100%;
+    }
+    
+}
+
